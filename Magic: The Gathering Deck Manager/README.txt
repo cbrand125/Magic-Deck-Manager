@@ -1,0 +1,3 @@
+In this prototype version of the Magic: The Gathering Deck Manager application, the user is initially presented with a default test deck.  This deck is full of 60 random cards.  The user can click the cards to see some details.  He or she can also delete and add cards to the deck with the navigation bar items.  To add a card, click the plus button and type the full name of the card to be added.  Only the full correct name will work.  Examples can be found on gatherer.wizards.com; try adding "Mountain" or "Monastery Swiftspear" to quickly test functionality.
+
+Currently, the application does not support adding multiples of the same card to the deck.  This will be fixed in the full version along with much more functionality and a detailed card information page.

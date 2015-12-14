@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A10061E1C15119100F3CF8D /* CardQuantityUIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10061D1C15119100F3CF8D /* CardQuantityUIStepper.swift */; settings = {ASSET_TAGS = (); }; };
+		9A1006201C153C4D00F3CF8D /* DeckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10061F1C153C4D00F3CF8D /* DeckTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A1006221C15537100F3CF8D /* String+FirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1006211C15537100F3CF8D /* String+FirstLetter.swift */; settings = {ASSET_TAGS = (); }; };
+		9A1006241C155C4C00F3CF8D /* AddDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1006231C155C4C00F3CF8D /* AddDeckViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A5CB4E81C02835700E88142 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CB4E71C02835700E88142 /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		9A6C7EAE1C1E230700E6F2F0 /* DeckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C7EAD1C1E230700E6F2F0 /* DeckDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6C9FD81C01148D00C4FC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FD71C01148D00C4FC59 /* AppDelegate.swift */; };
+		9A6C9FDA1C01148D00C4FC59 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FD91C01148D00C4FC59 /* MasterViewController.swift */; };
+		9A6C9FDC1C01148D00C4FC59 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FDB1C01148D00C4FC59 /* DetailViewController.swift */; };
+		9A6C9FDF1C01148D00C4FC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C9FDD1C01148D00C4FC59 /* Main.storyboard */; };
+		9A6C9FE11C01148D00C4FC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C9FE01C01148D00C4FC59 /* Assets.xcassets */; };
+		9A6C9FE41C01148D00C4FC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C9FE21C01148D00C4FC59 /* LaunchScreen.storyboard */; };
+		9A6C9FEF1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FEE1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift */; };
+		9A6C9FFA1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FF91C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift */; };
+		9A6CA0081C0114AF00C4FC59 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0071C0114AF00C4FC59 /* Model.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA00A1C0116E300C4FC59 /* AllCards-x.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CA0091C0116E300C4FC59 /* AllCards-x.json */; settings = {ASSET_TAGS = (); }; };
+		9A6CA00C1C01193500C4FC59 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA00B1C01193500C4FC59 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA00F1C011B2C00C4FC59 /* Cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA00D1C011B2C00C4FC59 /* Cards.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		9A6CA0141C0120D300C4FC59 /* Deck+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0101C0120D300C4FC59 /* Deck+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA0151C0120D300C4FC59 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0111C0120D300C4FC59 /* Deck.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA0161C0120D300C4FC59 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0121C0120D300C4FC59 /* Card+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA0171C0120D300C4FC59 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0131C0120D300C4FC59 /* Card.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA0191C01347700C4FC59 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0181C01347700C4FC59 /* DataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6DA5351C01885B00021827 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DA5341C01885B00021827 /* AddCardViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6DA5371C019B5D00021827 /* UIImageView+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DA5361C019B5D00021827 /* UIImageView+imageFromUrl.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6FC9601C1E5D0600F7C572 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FC95F1C1E5D0600F7C572 /* PieChartView.swift */; settings = {ASSET_TAGS = (); }; };
+		9A8800A21C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		9A8800A31C14DBC700280A62 /* CardQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8800A11C14DBC700280A62 /* CardQuantity.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A6C9FEB1C01148D00C4FC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A6C9FCC1C01148D00C4FC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A6C9FD31C01148D00C4FC59;
+			remoteInfo = "Magic: The Gathering Deck Manager";
+		};
+		9A6C9FF61C01148D00C4FC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A6C9FCC1C01148D00C4FC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A6C9FD31C01148D00C4FC59;
+			remoteInfo = "Magic: The Gathering Deck Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A10061D1C15119100F3CF8D /* CardQuantityUIStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardQuantityUIStepper.swift; sourceTree = "<group>"; };
+		9A10061F1C153C4D00F3CF8D /* DeckTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckTableViewController.swift; sourceTree = "<group>"; };
+		9A1006211C15537100F3CF8D /* String+FirstLetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FirstLetter.swift"; sourceTree = "<group>"; };
+		9A1006231C155C4C00F3CF8D /* AddDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeckViewController.swift; sourceTree = "<group>"; };
+		9A5CB4E71C02835700E88142 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		9A6C7EAD1C1E230700E6F2F0 /* DeckDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDetailViewController.swift; sourceTree = "<group>"; };
+		9A6C9FD41C01148D00C4FC59 /* Magic: The Gathering Deck Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic: The Gathering Deck Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C9FD71C01148D00C4FC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A6C9FD91C01148D00C4FC59 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9A6C9FDB1C01148D00C4FC59 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A6C9FDE1C01148D00C4FC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A6C9FE01C01148D00C4FC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A6C9FE31C01148D00C4FC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A6C9FE51C01148D00C4FC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6C9FEA1C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic: The Gathering Deck ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C9FEE1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic__The_Gathering_Deck_ManagerTests.swift; sourceTree = "<group>"; };
+		9A6C9FF01C01148D00C4FC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6C9FF51C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic: The Gathering Deck ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C9FF91C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic__The_Gathering_Deck_ManagerUITests.swift; sourceTree = "<group>"; };
+		9A6C9FFB1C01148D00C4FC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6CA0071C0114AF00C4FC59 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9A6CA0091C0116E300C4FC59 /* AllCards-x.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "AllCards-x.json"; sourceTree = "<group>"; };
+		9A6CA00B1C01193500C4FC59 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9A6CA00E1C011B2C00C4FC59 /* Cards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cards.xcdatamodel; sourceTree = "<group>"; };
+		9A6CA0101C0120D300C4FC59 /* Deck+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deck+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9A6CA0111C0120D300C4FC59 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		9A6CA0121C0120D300C4FC59 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9A6CA0131C0120D300C4FC59 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9A6CA0181C01347700C4FC59 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		9A6DA5341C01885B00021827 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		9A6DA5361C019B5D00021827 /* UIImageView+imageFromUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+imageFromUrl.swift"; sourceTree = "<group>"; };
+		9A6FC95F1C1E5D0600F7C572 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CardQuantity+CoreDataProperties.swift"; path = "../CardQuantity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9A8800A11C14DBC700280A62 /* CardQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardQuantity.swift; path = ../CardQuantity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A6C9FD11C01148D00C4FC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FE71C01148D00C4FC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FF21C01148D00C4FC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A6C9FCB1C01148D00C4FC59 = {
+			isa = PBXGroup;
+			children = (
+				9A5CB4E71C02835700E88142 /* README.txt */,
+				9A6C9FD61C01148D00C4FC59 /* Magic: The Gathering Deck Manager */,
+				9A6C9FED1C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests */,
+				9A6C9FF81C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests */,
+				9A6C9FD51C01148D00C4FC59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A6C9FD51C01148D00C4FC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C9FD41C01148D00C4FC59 /* Magic: The Gathering Deck Manager.app */,
+				9A6C9FEA1C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests.xctest */,
+				9A6C9FF51C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A6C9FD61C01148D00C4FC59 /* Magic: The Gathering Deck Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9A1006211C15537100F3CF8D /* String+FirstLetter.swift */,
+				9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */,
+				9A8800A11C14DBC700280A62 /* CardQuantity.swift */,
+				9A6CA0101C0120D300C4FC59 /* Deck+CoreDataProperties.swift */,
+				9A6CA0111C0120D300C4FC59 /* Deck.swift */,
+				9A6CA0121C0120D300C4FC59 /* Card+CoreDataProperties.swift */,
+				9A6CA0131C0120D300C4FC59 /* Card.swift */,
+				9A6C9FD71C01148D00C4FC59 /* AppDelegate.swift */,
+				9A6C9FD91C01148D00C4FC59 /* MasterViewController.swift */,
+				9A6C9FDB1C01148D00C4FC59 /* DetailViewController.swift */,
+				9A6C9FDD1C01148D00C4FC59 /* Main.storyboard */,
+				9A6C9FE01C01148D00C4FC59 /* Assets.xcassets */,
+				9A6C9FE21C01148D00C4FC59 /* LaunchScreen.storyboard */,
+				9A6C9FE51C01148D00C4FC59 /* Info.plist */,
+				9A6CA0091C0116E300C4FC59 /* AllCards-x.json */,
+				9A6CA00B1C01193500C4FC59 /* DataManager.swift */,
+				9A6CA00D1C011B2C00C4FC59 /* Cards.xcdatamodeld */,
+				9A6CA0181C01347700C4FC59 /* DataSource.swift */,
+				9A6CA0071C0114AF00C4FC59 /* Model.swift */,
+				9A6DA5341C01885B00021827 /* AddCardViewController.swift */,
+				9A6DA5361C019B5D00021827 /* UIImageView+imageFromUrl.swift */,
+				9A10061D1C15119100F3CF8D /* CardQuantityUIStepper.swift */,
+				9A10061F1C153C4D00F3CF8D /* DeckTableViewController.swift */,
+				9A1006231C155C4C00F3CF8D /* AddDeckViewController.swift */,
+				9A6C7EAD1C1E230700E6F2F0 /* DeckDetailViewController.swift */,
+				9A6FC95F1C1E5D0600F7C572 /* PieChartView.swift */,
+			);
+			path = "Magic: The Gathering Deck Manager";
+			sourceTree = "<group>";
+		};
+		9A6C9FED1C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C9FEE1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift */,
+				9A6C9FF01C01148D00C4FC59 /* Info.plist */,
+			);
+			path = "Magic: The Gathering Deck ManagerTests";
+			sourceTree = "<group>";
+		};
+		9A6C9FF81C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C9FF91C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift */,
+				9A6C9FFB1C01148D00C4FC59 /* Info.plist */,
+			);
+			path = "Magic: The Gathering Deck ManagerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A6C9FD31C01148D00C4FC59 /* Magic: The Gathering Deck Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A6C9FFE1C01148D00C4FC59 /* Build configuration list for PBXNativeTarget "Magic: The Gathering Deck Manager" */;
+			buildPhases = (
+				9A6C9FD01C01148D00C4FC59 /* Sources */,
+				9A6C9FD11C01148D00C4FC59 /* Frameworks */,
+				9A6C9FD21C01148D00C4FC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magic: The Gathering Deck Manager";
+			productName = "Magic: The Gathering Deck Manager";
+			productReference = 9A6C9FD41C01148D00C4FC59 /* Magic: The Gathering Deck Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A6C9FE91C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A6CA0011C01148D00C4FC59 /* Build configuration list for PBXNativeTarget "Magic: The Gathering Deck ManagerTests" */;
+			buildPhases = (
+				9A6C9FE61C01148D00C4FC59 /* Sources */,
+				9A6C9FE71C01148D00C4FC59 /* Frameworks */,
+				9A6C9FE81C01148D00C4FC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A6C9FEC1C01148D00C4FC59 /* PBXTargetDependency */,
+			);
+			name = "Magic: The Gathering Deck ManagerTests";
+			productName = "Magic: The Gathering Deck ManagerTests";
+			productReference = 9A6C9FEA1C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A6C9FF41C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A6CA0041C01148D00C4FC59 /* Build configuration list for PBXNativeTarget "Magic: The Gathering Deck ManagerUITests" */;
+			buildPhases = (
+				9A6C9FF11C01148D00C4FC59 /* Sources */,
+				9A6C9FF21C01148D00C4FC59 /* Frameworks */,
+				9A6C9FF31C01148D00C4FC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A6C9FF71C01148D00C4FC59 /* PBXTargetDependency */,
+			);
+			name = "Magic: The Gathering Deck ManagerUITests";
+			productName = "Magic: The Gathering Deck ManagerUITests";
+			productReference = 9A6C9FF51C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A6C9FCC1C01148D00C4FC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Cody Brand";
+				TargetAttributes = {
+					9A6C9FD31C01148D00C4FC59 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = EJ4FZPUJ33;
+					};
+					9A6C9FE91C01148D00C4FC59 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = EJ4FZPUJ33;
+						TestTargetID = 9A6C9FD31C01148D00C4FC59;
+					};
+					9A6C9FF41C01148D00C4FC59 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = EJ4FZPUJ33;
+						TestTargetID = 9A6C9FD31C01148D00C4FC59;
+					};
+				};
+			};
+			buildConfigurationList = 9A6C9FCF1C01148D00C4FC59 /* Build configuration list for PBXProject "Magic: The Gathering Deck Manager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A6C9FCB1C01148D00C4FC59;
+			productRefGroup = 9A6C9FD51C01148D00C4FC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A6C9FD31C01148D00C4FC59 /* Magic: The Gathering Deck Manager */,
+				9A6C9FE91C01148D00C4FC59 /* Magic: The Gathering Deck ManagerTests */,
+				9A6C9FF41C01148D00C4FC59 /* Magic: The Gathering Deck ManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A6C9FD21C01148D00C4FC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6C9FE41C01148D00C4FC59 /* LaunchScreen.storyboard in Resources */,
+				9A6C9FE11C01148D00C4FC59 /* Assets.xcassets in Resources */,
+				9A6CA00A1C0116E300C4FC59 /* AllCards-x.json in Resources */,
+				9A6C9FDF1C01148D00C4FC59 /* Main.storyboard in Resources */,
+				9A5CB4E81C02835700E88142 /* README.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FE81C01148D00C4FC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FF31C01148D00C4FC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A6C9FD01C01148D00C4FC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6FC9601C1E5D0600F7C572 /* PieChartView.swift in Sources */,
+				9A10061E1C15119100F3CF8D /* CardQuantityUIStepper.swift in Sources */,
+				9A6C9FDC1C01148D00C4FC59 /* DetailViewController.swift in Sources */,
+				9A6CA0141C0120D300C4FC59 /* Deck+CoreDataProperties.swift in Sources */,
+				9A6CA00C1C01193500C4FC59 /* DataManager.swift in Sources */,
+				9A6C9FDA1C01148D00C4FC59 /* MasterViewController.swift in Sources */,
+				9A8800A21C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift in Sources */,
+				9A6CA0151C0120D300C4FC59 /* Deck.swift in Sources */,
+				9A6CA00F1C011B2C00C4FC59 /* Cards.xcdatamodeld in Sources */,
+				9A6CA0161C0120D300C4FC59 /* Card+CoreDataProperties.swift in Sources */,
+				9A1006221C15537100F3CF8D /* String+FirstLetter.swift in Sources */,
+				9A6C7EAE1C1E230700E6F2F0 /* DeckDetailViewController.swift in Sources */,
+				9A6CA0171C0120D300C4FC59 /* Card.swift in Sources */,
+				9A6DA5351C01885B00021827 /* AddCardViewController.swift in Sources */,
+				9A8800A31C14DBC700280A62 /* CardQuantity.swift in Sources */,
+				9A1006201C153C4D00F3CF8D /* DeckTableViewController.swift in Sources */,
+				9A6C9FD81C01148D00C4FC59 /* AppDelegate.swift in Sources */,
+				9A6CA0191C01347700C4FC59 /* DataSource.swift in Sources */,
+				9A1006241C155C4C00F3CF8D /* AddDeckViewController.swift in Sources */,
+				9A6DA5371C019B5D00021827 /* UIImageView+imageFromUrl.swift in Sources */,
+				9A6CA0081C0114AF00C4FC59 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FE61C01148D00C4FC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6C9FEF1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FF11C01148D00C4FC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6C9FFA1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A6C9FEC1C01148D00C4FC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A6C9FD31C01148D00C4FC59 /* Magic: The Gathering Deck Manager */;
+			targetProxy = 9A6C9FEB1C01148D00C4FC59 /* PBXContainerItemProxy */;
+		};
+		9A6C9FF71C01148D00C4FC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A6C9FD31C01148D00C4FC59 /* Magic: The Gathering Deck Manager */;
+			targetProxy = 9A6C9FF61C01148D00C4FC59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A6C9FDD1C01148D00C4FC59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A6C9FDE1C01148D00C4FC59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A6C9FE21C01148D00C4FC59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A6C9FE31C01148D00C4FC59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A6C9FFC1C01148D00C4FC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A6C9FFD1C01148D00C4FC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A6C9FFF1C01148D00C4FC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Magic: The Gathering Deck Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A6CA0001C01148D00C4FC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Magic: The Gathering Deck Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A6CA0021C01148D00C4FC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Magic: The Gathering Deck ManagerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magic: The Gathering Deck Manager.app/Magic: The Gathering Deck Manager";
+			};
+			name = Debug;
+		};
+		9A6CA0031C01148D00C4FC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Magic: The Gathering Deck ManagerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magic: The Gathering Deck Manager.app/Magic: The Gathering Deck Manager";
+			};
+			name = Release;
+		};
+		9A6CA0051C01148D00C4FC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Magic: The Gathering Deck ManagerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Magic: The Gathering Deck Manager";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9A6CA0061C01148D00C4FC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Magic: The Gathering Deck ManagerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Magic: The Gathering Deck Manager";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A6C9FCF1C01148D00C4FC59 /* Build configuration list for PBXProject "Magic: The Gathering Deck Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6C9FFC1C01148D00C4FC59 /* Debug */,
+				9A6C9FFD1C01148D00C4FC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6C9FFE1C01148D00C4FC59 /* Build configuration list for PBXNativeTarget "Magic: The Gathering Deck Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6C9FFF1C01148D00C4FC59 /* Debug */,
+				9A6CA0001C01148D00C4FC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6CA0011C01148D00C4FC59 /* Build configuration list for PBXNativeTarget "Magic: The Gathering Deck ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6CA0021C01148D00C4FC59 /* Debug */,
+				9A6CA0031C01148D00C4FC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6CA0041C01148D00C4FC59 /* Build configuration list for PBXNativeTarget "Magic: The Gathering Deck ManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6CA0051C01148D00C4FC59 /* Debug */,
+				9A6CA0061C01148D00C4FC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A6CA00D1C011B2C00C4FC59 /* Cards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A6CA00E1C011B2C00C4FC59 /* Cards.xcdatamodel */,
+			);
+			currentVersion = 9A6CA00E1C011B2C00C4FC59 /* Cards.xcdatamodel */;
+			name = Cards.xcdatamodeld;
+			path = ../Cards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9A6C9FCC1C01148D00C4FC59 /* Project object */;
+}
