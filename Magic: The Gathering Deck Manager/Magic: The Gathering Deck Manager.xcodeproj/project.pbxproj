@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A10061E1C15119100F3CF8D /* CardQuantityUIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10061D1C15119100F3CF8D /* CardQuantityUIStepper.swift */; settings = {ASSET_TAGS = (); }; };
-		9A1006201C153C4D00F3CF8D /* DeckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10061F1C153C4D00F3CF8D /* DeckTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9A1006221C15537100F3CF8D /* String+FirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1006211C15537100F3CF8D /* String+FirstLetter.swift */; settings = {ASSET_TAGS = (); }; };
-		9A1006241C155C4C00F3CF8D /* AddDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1006231C155C4C00F3CF8D /* AddDeckViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9A5CB4E81C02835700E88142 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CB4E71C02835700E88142 /* README.txt */; settings = {ASSET_TAGS = (); }; };
-		9A6C7EAE1C1E230700E6F2F0 /* DeckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C7EAD1C1E230700E6F2F0 /* DeckDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A10061E1C15119100F3CF8D /* CardQuantityUIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10061D1C15119100F3CF8D /* CardQuantityUIStepper.swift */; };
+		9A1006201C153C4D00F3CF8D /* DeckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10061F1C153C4D00F3CF8D /* DeckTableViewController.swift */; };
+		9A1006221C15537100F3CF8D /* String+FirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1006211C15537100F3CF8D /* String+FirstLetter.swift */; };
+		9A1006241C155C4C00F3CF8D /* AddDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1006231C155C4C00F3CF8D /* AddDeckViewController.swift */; };
+		9A5CB4E81C02835700E88142 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CB4E71C02835700E88142 /* README.txt */; };
+		9A6C7EAE1C1E230700E6F2F0 /* DeckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C7EAD1C1E230700E6F2F0 /* DeckDetailViewController.swift */; };
 		9A6C9FD81C01148D00C4FC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FD71C01148D00C4FC59 /* AppDelegate.swift */; };
 		9A6C9FDA1C01148D00C4FC59 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FD91C01148D00C4FC59 /* MasterViewController.swift */; };
 		9A6C9FDC1C01148D00C4FC59 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FDB1C01148D00C4FC59 /* DetailViewController.swift */; };
@@ -21,20 +21,29 @@
 		9A6C9FE41C01148D00C4FC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C9FE21C01148D00C4FC59 /* LaunchScreen.storyboard */; };
 		9A6C9FEF1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FEE1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerTests.swift */; };
 		9A6C9FFA1C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C9FF91C01148D00C4FC59 /* Magic__The_Gathering_Deck_ManagerUITests.swift */; };
-		9A6CA0081C0114AF00C4FC59 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0071C0114AF00C4FC59 /* Model.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6CA00A1C0116E300C4FC59 /* AllCards-x.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CA0091C0116E300C4FC59 /* AllCards-x.json */; settings = {ASSET_TAGS = (); }; };
-		9A6CA00C1C01193500C4FC59 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA00B1C01193500C4FC59 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6CA00F1C011B2C00C4FC59 /* Cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA00D1C011B2C00C4FC59 /* Cards.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		9A6CA0141C0120D300C4FC59 /* Deck+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0101C0120D300C4FC59 /* Deck+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6CA0151C0120D300C4FC59 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0111C0120D300C4FC59 /* Deck.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6CA0161C0120D300C4FC59 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0121C0120D300C4FC59 /* Card+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6CA0171C0120D300C4FC59 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0131C0120D300C4FC59 /* Card.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6CA0191C01347700C4FC59 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0181C01347700C4FC59 /* DataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6DA5351C01885B00021827 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DA5341C01885B00021827 /* AddCardViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6DA5371C019B5D00021827 /* UIImageView+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DA5361C019B5D00021827 /* UIImageView+imageFromUrl.swift */; settings = {ASSET_TAGS = (); }; };
-		9A6FC9601C1E5D0600F7C572 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FC95F1C1E5D0600F7C572 /* PieChartView.swift */; settings = {ASSET_TAGS = (); }; };
-		9A8800A21C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		9A8800A31C14DBC700280A62 /* CardQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8800A11C14DBC700280A62 /* CardQuantity.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6CA0081C0114AF00C4FC59 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0071C0114AF00C4FC59 /* Model.swift */; };
+		9A6CA00A1C0116E300C4FC59 /* AllCards-x.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CA0091C0116E300C4FC59 /* AllCards-x.json */; };
+		9A6CA00C1C01193500C4FC59 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA00B1C01193500C4FC59 /* DataManager.swift */; };
+		9A6CA00F1C011B2C00C4FC59 /* Cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA00D1C011B2C00C4FC59 /* Cards.xcdatamodeld */; };
+		9A6CA0141C0120D300C4FC59 /* Deck+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0101C0120D300C4FC59 /* Deck+CoreDataProperties.swift */; };
+		9A6CA0151C0120D300C4FC59 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0111C0120D300C4FC59 /* Deck.swift */; };
+		9A6CA0161C0120D300C4FC59 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0121C0120D300C4FC59 /* Card+CoreDataProperties.swift */; };
+		9A6CA0171C0120D300C4FC59 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0131C0120D300C4FC59 /* Card.swift */; };
+		9A6CA0191C01347700C4FC59 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CA0181C01347700C4FC59 /* DataSource.swift */; };
+		9A6DA5351C01885B00021827 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DA5341C01885B00021827 /* AddCardViewController.swift */; };
+		9A6DA5371C019B5D00021827 /* UIImageView+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DA5361C019B5D00021827 /* UIImageView+imageFromUrl.swift */; };
+		9A6FC9601C1E5D0600F7C572 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FC95F1C1E5D0600F7C572 /* PieChartView.swift */; };
+		9A8800A21C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */; };
+		9A8800A31C14DBC700280A62 /* CardQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8800A11C14DBC700280A62 /* CardQuantity.swift */; };
+		FA5F4E671C1FB60300E30702 /* Cards.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E641C1FB60300E30702 /* Cards.sqlite */; };
+		FA5F4E681C1FB60300E30702 /* Cards.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E641C1FB60300E30702 /* Cards.sqlite */; };
+		FA5F4E691C1FB60300E30702 /* Cards.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E641C1FB60300E30702 /* Cards.sqlite */; };
+		FA5F4E6A1C1FB60300E30702 /* Cards.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E651C1FB60300E30702 /* Cards.sqlite-shm */; };
+		FA5F4E6B1C1FB60300E30702 /* Cards.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E651C1FB60300E30702 /* Cards.sqlite-shm */; };
+		FA5F4E6C1C1FB60300E30702 /* Cards.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E651C1FB60300E30702 /* Cards.sqlite-shm */; };
+		FA5F4E6D1C1FB60300E30702 /* Cards.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E661C1FB60300E30702 /* Cards.sqlite-wal */; };
+		FA5F4E6E1C1FB60300E30702 /* Cards.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E661C1FB60300E30702 /* Cards.sqlite-wal */; };
+		FA5F4E6F1C1FB60300E30702 /* Cards.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = FA5F4E661C1FB60300E30702 /* Cards.sqlite-wal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +98,9 @@
 		9A6FC95F1C1E5D0600F7C572 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CardQuantity+CoreDataProperties.swift"; path = "../CardQuantity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9A8800A11C14DBC700280A62 /* CardQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardQuantity.swift; path = ../CardQuantity.swift; sourceTree = "<group>"; };
+		FA5F4E641C1FB60300E30702 /* Cards.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cards.sqlite; sourceTree = "<group>"; };
+		FA5F4E651C1FB60300E30702 /* Cards.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cards.sqlite-shm"; sourceTree = "<group>"; };
+		FA5F4E661C1FB60300E30702 /* Cards.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cards.sqlite-wal"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,9 @@
 		9A6C9FD61C01148D00C4FC59 /* Magic: The Gathering Deck Manager */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F4E641C1FB60300E30702 /* Cards.sqlite */,
+				FA5F4E651C1FB60300E30702 /* Cards.sqlite-shm */,
+				FA5F4E661C1FB60300E30702 /* Cards.sqlite-wal */,
 				9A1006211C15537100F3CF8D /* String+FirstLetter.swift */,
 				9A8800A01C14DBC700280A62 /* CardQuantity+CoreDataProperties.swift */,
 				9A8800A11C14DBC700280A62 /* CardQuantity.swift */,
@@ -299,6 +314,9 @@
 				9A6CA00A1C0116E300C4FC59 /* AllCards-x.json in Resources */,
 				9A6C9FDF1C01148D00C4FC59 /* Main.storyboard in Resources */,
 				9A5CB4E81C02835700E88142 /* README.txt in Resources */,
+				FA5F4E671C1FB60300E30702 /* Cards.sqlite in Resources */,
+				FA5F4E6D1C1FB60300E30702 /* Cards.sqlite-wal in Resources */,
+				FA5F4E6A1C1FB60300E30702 /* Cards.sqlite-shm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +324,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5F4E6E1C1FB60300E30702 /* Cards.sqlite-wal in Resources */,
+				FA5F4E6B1C1FB60300E30702 /* Cards.sqlite-shm in Resources */,
+				FA5F4E681C1FB60300E30702 /* Cards.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +334,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5F4E6F1C1FB60300E30702 /* Cards.sqlite-wal in Resources */,
+				FA5F4E6C1C1FB60300E30702 /* Cards.sqlite-shm in Resources */,
+				FA5F4E691C1FB60300E30702 /* Cards.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Magic: The Gathering Deck Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-Manager";
@@ -496,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Magic: The Gathering Deck Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.cse.czb5280.Magic--The-Gathering-Deck-Manager";

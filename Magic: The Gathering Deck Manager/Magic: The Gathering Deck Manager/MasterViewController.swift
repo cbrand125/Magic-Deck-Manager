@@ -154,7 +154,7 @@ class MasterViewController: UITableViewController, DataSourceCellConfigurer, UIP
             let card = cardCount.card
             model.removeCardFromDeck(deck!, card: card!)
             dataSource!.update()
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            tableView.reloadData()
         }
     }
 

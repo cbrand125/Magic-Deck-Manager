@@ -26,6 +26,10 @@ class DataManager {
     
     weak var delegate : DataManagerDelegate? {
         didSet {
+            let fileManager = NSFileManager.defaultManager()
+            let bundle = NSBundle.mainBundle()
+            let path = bundle.pathForResource("Cards", ofType: "sqlite")!
+            if ((try? fileManager.copyItemAtPath(path, toPath: databasePath().path!)) != nil) {}
             if !databaseExists() {
                 delegate!.createDatabase()
             }

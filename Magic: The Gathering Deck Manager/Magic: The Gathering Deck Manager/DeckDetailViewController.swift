@@ -74,7 +74,7 @@ class DeckDetailViewController: UIViewController {
         let red = aggregateColorInfo(a: manaMin, b: manaMax, c: 0)
         let green = aggregateColorInfo(a: manaMin, b: manaMax, c: 0)
         var totalMana = [Int](count: manaMax, repeatedValue: 0)
-        var maxCMC = 0
+        var maxCMC = 1
         var maxCMCOccurences = 0
         for card in cards {
             if let manaCost = card.card?.manaCost {

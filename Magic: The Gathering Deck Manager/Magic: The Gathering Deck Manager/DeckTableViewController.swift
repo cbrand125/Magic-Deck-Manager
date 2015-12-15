@@ -90,8 +90,12 @@ class DeckTableViewController: UITableViewController, DataSourceCellConfigurer, 
             }
             detailViewController?.tableView.userInteractionEnabled = false
             detailViewController?.navigationItem.leftBarButtonItems![1].enabled = false
-            for button in (detailViewController?.navigationItem.rightBarButtonItems!)! {
-                button.enabled = false
+            if let buttons = detailViewController?.navigationItem.rightBarButtonItems {
+                for button in buttons {
+                    button.enabled = false
+                }
+            } else {
+                detailViewController?.navigationItem.rightBarButtonItem!.enabled = false
             }
         }
     }
