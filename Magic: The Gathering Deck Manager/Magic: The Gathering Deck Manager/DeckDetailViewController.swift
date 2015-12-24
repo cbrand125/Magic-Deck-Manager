@@ -41,15 +41,22 @@ class DeckDetailViewController: UIViewController {
     func analyzeManaForColorRegex(regex: NSRegularExpression, manaCost: String, color: aggregateColorInfo, card: CardQuantity) {
         let nsmanaCost = manaCost as NSString
         if let match = regex.firstMatchInString(manaCost, options: NSMatchingOptions.WithTransparentBounds, range: NSMakeRange(0, nsmanaCost.length)) {
-            color.totalSymbolCount += match.range.length/3
+            color.totalSymbolCount += (match.range.length/3) * Int(card.number!)
             if match.range.length > color.max {
                 color.max = match.range.length
-                if let totalCost = card.card?.cmc?.integerValue {
-                    if color.CMCofMax < color.max/3 {
-                        color.CMCofMax = manaMax
-                    }
-                    if color.CMCofMax > totalCost {
-                        color.CMCofMax = totalCost
+            }
+        }
+    }
+    
+    func findLowestCMCForColorMax(regex: NSRegularExpression, color: aggregateColorInfo, cards: [CardQuantity]) {
+        for card in cards {
+            if let manaCost = card.card?.manaCost {
+                let nsmanaCost = manaCost as NSString
+                if let match = regex.firstMatchInString(manaCost, options: NSMatchingOptions.WithTransparentBounds, range: NSMakeRange(0, nsmanaCost.length)) {
+                    if let totalCost = card.card?.cmc?.integerValue {
+                        if (match.range.length == color.max) && (color.CMCofMax > totalCost) {
+                            color.CMCofMax = totalCost
+                        }
                     }
                 }
             }
@@ -94,6 +101,12 @@ class DeckDetailViewController: UIViewController {
                 }
             }
         }
+        
+        findLowestCMCForColorMax(blackRegex, color: black, cards: cards)
+        findLowestCMCForColorMax(blueRegex, color: blue, cards: cards)
+        findLowestCMCForColorMax(whiteRegex, color: white, cards: cards)
+        findLowestCMCForColorMax(redRegex, color: red, cards: cards)
+        findLowestCMCForColorMax(greenRegex, color: green, cards: cards)
         
         if let label = self.manaRestrictionLabel {
             label.text = ""
